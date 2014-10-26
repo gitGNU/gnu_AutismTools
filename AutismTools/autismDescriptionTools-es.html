@@ -37,12 +37,12 @@
 	<h2>¡Bienvenido!</h2>
       </div>
       <div class="col_2">
-	<p>Éste es el menú del programa para ir añadiendo estrellas al mapa de constelaciones.</p>             
-	<p>Seleccionando dentro de los menús las características y valorando los niveles poco a poco mostrará un gráfico sobre el cual se pueden encontrar las formaciones específicas para las constelaciones del autismo.</p>             
+	<p>Éste es el menú del programa para ir añadiendo la información. Será como añadir estrellas a un mapa de constelaciones.</p>             
+	<p>Se seleccionan dentro de los menús las características y en los pequeños formularios que salen, se indican los diferentes valores. Así, poco a poco, mostrará una tabla-esquema con una descripción bien detallada. Esto puede ayudar a conseguir una visión general de la situación personal incluso a la gente que tiene problemas de hiperespecialización con los detalles.</p>             
       </div>
       <div class="col_2">
 	<h2>Esta aún en desarrollo</h2>
-      </div>
+      </div> 
       <div class="col_1">
 	<img src="img/browsers.png" width="125" height="48" alt="" />
       </div>
@@ -255,7 +255,7 @@
   
 <div id="form" style="display:none;">
   <form name ="miniformulario" id="miniformulario" action="javascript:addFunctionality();">
-    <input type="text" id="selectedFunctionality" value="prueba de que tiene gatos">
+    <input type="text" id="selectedFunctionality" >
     <a href="javascript:activateTwoExtraWords();" style="text-decoration: none">+</a>
     <input type="text" id="twoExtraWords" value=""  style="display:none;">
     <spam id="blok1">
@@ -522,7 +522,280 @@
     <button id="btn1">Set Text</button>  
   </form>
 </div>
+
+  
+<div id="form2" style="display:none;">
+  <form name ="miniformulario2" id="miniformulario2" action="javascript:changeFunctionality();"> Modificación: 
+    <input type="text" id="selectedFunctionality_2">
+    <a href="javascript:activateTwoExtraWords_2();" style="text-decoration: none">+</a>
+    <input type="text" id="twoExtraWords_2" value=""  style="display:none;">
+    <spam id="blok1_2">
+      <select size="1" id="professionalEffectOfFunctionality1_2" name="PEfunctionality1_2">
+	<option value=""> - Selecciona el efecto en amistades, trabajo o pareja - </option>
+	<option value="1">Bloqueo o problema que peligra profesión, pareja o amistades. </option>
+	<option value="2">Indiferencia o insuficiencia que perturba el normal funcionamiento. </option>
+	<option value="3">Insuficiencia cubierta o camuflada. </option>
+	<option value="4">Efecto dentro de la normalidad en profesión, pareja o amistades. </option>
+	<option value="5">Efecto eficaz para desarrollar profesión, amistades o pareja. </option>
+	<option value="6">Efecto exitoso en la vida para la profesión, pareja o amistades. </option>
+	<option value="7">Un éxito ya conseguido, algo de alguna forma histórico. </option>
+      </select>
+      <select size="1" id="StimulusLevelOfFunctionality1_2" name="SLfunctionality1_2">
+	<option value=""> - Selecciona un nivel del estímulo - </option>
+	<option value="9">Diferencias neurológicas notorias. Ataques de epilépsia. </option>
+	<option value="9">Lags, desconexiones.Letargos, estar en babia. </option>
+	<option value="8">Inconsciencia de como altera la propia vida. </option>
+	<option value="7">Enfoque alto que anula la atención o distrae del resto. </option>
+	<option value="6">Es algo que apasiona o emociona. </option>
+	<option value="5">Se vive como un estímulo intenso </option>
+	<option value="4">Algo normal, la intensidad no estimula o molesta de forma especial. </option>
+	<option value="3">Es un estímulo pobre, no despierta interés. </option>
+	<option value="2">Estímulo muy escaso, apenas percibido. </option>
+	<option value="1">Estímulo imposible de notar o darse cuenta. </option>
+      </select>
+      <br />
+      <select size="1" id="degreeOfFunctionality1_2" name="functionality1_2">
+	<option value=""> - Selecciona un nivel de funcionalidad - </option>
+	<option value="9">Increible, ¿nivel savant? -Estrella supergigante</option>
+	<option value="8">Superdesarrollada, ¿genialidad? -Estrella gigante</option>
+	<option value="7">Muy eficaz ¿altas prestaciones? -Estrella brillante</option>
+	<option value="6">Se desempeña bien, eficaz. (Un sol normal)</option>
+	<option value="5">Apenas logra cumplir -pequeña estrella luminosa</option>
+	<option value="4">Torpe, escasa -estrella marrón, no ilumina </option>
+	<option value="3">Muy torpe, demasiado escasa -apenas estrella marrón</option>
+	<option value="2">Muy deficiente pero existente. (Un planeta)</option>
+	<option value="1">En la práctica inexistente. (Agujero negro)</option>
+	<option value="0">Carencia absoluta -Agujero negro supermasivo</option>
+      </select>
+      <select size="1" id="pleasureOfFunctionality1_2" name="pleasureOfFunctionality1_2">
+	<option value=""> - selecciona - </option>
+	<option value="blue">Facina</option>
+	<option value="dodgerblue">encanta</option>
+	<option value="green">Gusta</option>
+	<option value="olive">Agrada</option>
+	<option value="Chocolate">Indefinido</option>
+	<option value="Darkorange">Incomoda</option>
+	<option value="orangered">Irrita</option>
+	<option value="Darkred">duele.</option>
+	<option value="black">Me produce auto/agresividad</option>
+	<option value="indigo">Cambios bruscos Depresión-Euforia</option>
+      </select>
+      <select size="1" id="frequencyOfFunctionality1_2" name="frequencyOfFunctionality1_2"  value="normal">
+	<option value="normal">normal</option>
+	<option value="unusual">unusual</option>
+	<option value="rare">rare</option>
+      </select>
+      <a href="javascript:activateblock2_2();" style="text-decoration: none; ">+</a>
+    </spam>
+    <spam id="block2_2"  style="display:none;">
+      <select size="1" id="degreeOfFunctionality2_2" name="functionality2_2">
+	<option value=""> - Selecciona un nivel de funcionalidad - </option>
+	<option value="9">Increible, ¿nivel savant? -Estrella supergigante</option>
+	<option value="8">Superdesarrollada, ¿genialidad? -Estrella gigante</option>
+	<option value="7">Muy eficaz ¿altas prestaciones? -Estrella brillante</option>
+	<option value="6">Se desempeña bien, eficaz. (Un sol normal)</option>
+	<option value="5">Apenas logra cumplir -pequeña estrella luminosa</option>
+	<option value="4">Torpe, escasa -estrella marrón, no ilumina </option>
+	<option value="3">Muy torpe, demasiado escasa -apenas estrella marrón</option>
+	<option value="2">Muy deficiente pero existente. (Un planeta)</option>
+	<option value="1">En la práctica inexistente. (Agujero negro)</option>
+	<option value="0">Carencia absoluta -Agujero negro supermasivo</option>
+      </select>
+      <select size="1" id="pleasureOfFunctionality2_2" name="pleasureOfFunctionality2_2">
+	<option value=""> - selecciona - </option>
+	<option value="blue">Facina</option>
+	<option value="dodgerblue">encanta</option>
+	<option value="green">Gusta</option>
+	<option value="olive">Agrada</option>
+	<option value="Chocolate">Indefinido</option>
+	<option value="Darkorange">Incomoda</option>
+	<option value="orangered">Irrita</option>
+	<option value="Darkred">duele.</option>
+	<option value="black">Me produce agresividad</option>
+	<option value="indigo">Cambios bruscos Depresión-Euforia</option>
+      </select>
+      <select size="1" id="frequencyOfFunctionality2_2" name="frequencyOfFunctionality2_2" value="normal">
+	<option value="normal">normal</option>
+	<option value="unusual">unusual</option>
+	<option value="rare">rare</option>
+      </select>
+      <a href="javascript:activateblock3_2();" style="text-decoration: none; ">+</a>
+    </spam>
+    <spam id="block3_2"  style="display:none;">
+      <select size="1" id="degreeOfFunctionality3_2" name="functionality3_2">
+	<option value=""> - Selecciona un nivel de funcionalidad - </option>
+	<option value="9">Increible, ¿nivel savant? -Estrella supergigante</option>
+	<option value="8">Superdesarrollada, ¿genialidad? -Estrella gigante</option>
+	<option value="7">Muy eficaz ¿altas prestaciones? -Estrella brillante</option>
+	<option value="6">Se desempeña bien, eficaz. (Un sol normal)</option>
+	<option value="5">Apenas logra cumplir -pequeña estrella luminosa</option>
+	<option value="4">Torpe, escasa -estrella marrón, no ilumina </option>
+	<option value="3">Muy torpe, demasiado escasa -apenas estrella marrón</option>
+	<option value="2">Muy deficiente pero existente. (Un planeta)</option>
+	<option value="1">En la práctica inexistente. (Agujero negro)</option>
+	<option value="0">Carencia absoluta -Agujero negro supermasivo</option>
+      </select>
+      <select size="1" id="pleasureOfFunctionality3_2" name="pleasureOfFunctionality3_2">
+	<option value=""> - selecciona - </option>
+	<option value="blue">Facina</option>
+	<option value="dodgerblue">encanta</option>
+	<option value="green">Gusta</option>
+	<option value="olive">Agrada</option>
+	<option value="Chocolate">Indefinido</option>
+	<option value="Darkorange">Incomoda</option>
+	<option value="orangered">Irrita</option>
+	<option value="Darkred">duele.</option>
+	<option value="black">Me produce agresividad</option>
+	<option value="indigo">Cambios bruscos Depresión-Euforia</option>
+      </select>
+      <select size="1" id="frequencyOfFunctionality3_2" name="frequencyOfFunctionality3_2" value="normal">
+	<option value="normal">normal</option>
+	<option value="unusual">unusual</option>
+	<option value="rare">rare</option>
+      </select>
+      <a href="javascript:activateblock4_2();" style="text-decoration: none; ">+</a>
+    </spam>
+    <spam id="block4_2"  style="display:none;">
+      <select size="1" id="degreeOfFunctionality4_2" name="functionality4_2">
+	<option value=""> - Selecciona un nivel de funcionalidad - </option>
+	<option value="9">Increible, ¿nivel savant? -Estrella supergigante</option>
+	<option value="8">Superdesarrollada, ¿genialidad? -Estrella gigante</option>
+	<option value="7">Muy eficaz ¿altas prestaciones? -Estrella brillante</option>
+	<option value="6">Se desempeña bien, eficaz. (Un sol normal)</option>
+	<option value="5">Apenas logra cumplir -pequeña estrella luminosa</option>
+	<option value="4">Torpe, escasa -estrella marrón, no ilumina </option>
+	<option value="3">Muy torpe, demasiado escasa -apenas estrella marrón</option>
+	<option value="2">Muy deficiente pero existente. (Un planeta)</option>
+	<option value="1">En la práctica inexistente. (Agujero negro)</option>
+	<option value="0">Carencia absoluta -Agujero negro supermasivo</option>
+      </select>
+      <select size="1" id="pleasureOfFunctionality4_2" name="pleasureOfFunctionality4_2">
+	<option value=""> - selecciona - </option>
+	<option value="blue">Facina</option>
+	<option value="dodgerblue">encanta</option>
+	<option value="green">Gusta</option>
+	<option value="olive">Agrada</option>
+	<option value="Chocolate">Indefinido</option>
+	<option value="Darkorange">Incomoda</option>
+	<option value="orangered">Irrita</option>
+	<option value="Darkred">duele.</option>
+	<option value="black">Me produce agresividad</option>
+	<option value="indigo">Cambios bruscos Depresión-Euforia</option>
+      </select>
+      <select size="1" id="frequencyOfFunctionality4_2" name="frequencyOfFunctionality4_2" value="normal">
+	<option value="normal">normal</option>
+	<option value="unusual">unusual</option>
+	<option value="rare">rare</option>
+      </select>
+      <a href="javascript:activateblock5_2();" style="text-decoration: none; ">+</a>
+    </spam>
+    <spam id="block5_2"  style="display:none;">
+      <select size="1" id="degreeOfFunctionality5_2" name="functionality5_2">
+	<option value=""> - Selecciona un nivel de funcionalidad - </option>
+	<option value="9">Increible, ¿nivel savant? -Estrella supergigante</option>
+	<option value="8">Superdesarrollada, ¿genialidad? -Estrella gigante</option>
+	<option value="7">Muy eficaz ¿altas prestaciones? -Estrella brillante</option>
+	<option value="6">Se desempeña bien, eficaz. (Un sol normal)</option>
+	<option value="5">Apenas logra cumplir -pequeña estrella luminosa</option>
+	<option value="4">Torpe, escasa -estrella marrón, no ilumina </option>
+	<option value="3">Muy torpe, demasiado escasa -apenas estrella marrón</option>
+	<option value="2">Muy deficiente pero existente. (Un planeta)</option>
+	<option value="1">En la práctica inexistente. (Agujero negro)</option>
+	<option value="0">Carencia absoluta -Agujero negro supermasivo</option>
+      </select>
+      <select size="1" id="pleasureOfFunctionality5_2" name="pleasureOfFunctionality5_2">
+	<option value=""> - selecciona - </option>
+	<option value="blue">Facina</option>
+	<option value="dodgerblue">encanta</option>
+	<option value="green">Gusta</option>
+	<option value="olive">Agrada</option>
+	<option value="Chocolate">Indefinido</option>
+	<option value="Darkorange">Incomoda</option>
+	<option value="orangered">Irrita</option>
+	<option value="Darkred">duele.</option>
+	<option value="black">Me produce agresividad</option>
+	<option value="indigo">Cambios bruscos Depresión-Euforia</option>
+      </select>
+      <select size="1" id="frequencyOfFunctionality5_2" name="frequencyOfFunctionality5_2" value="normal">
+	<option value="normal">normal</option>
+	<option value="unusual">unusual</option>
+	<option value="rare">rare</option>
+      </select>
+      <a href="javascript:activateblock6_2();" style="text-decoration: none; ">+</a>
+    </spam>
+    <spam id="block6_2"  style="display:none;">
+      <select size="1" id="degreeOfFunctionality6_2" name="functionality6_2">
+	<option value=""> - Selecciona un nivel de funcionalidad - </option>
+	<option value="9">Increible, ¿nivel savant? -Estrella supergigante</option>
+	<option value="8">Superdesarrollada, ¿genialidad? -Estrella gigante</option>
+	<option value="7">Muy eficaz ¿altas prestaciones? -Estrella brillante</option>
+	<option value="6">Se desempeña bien, eficaz. (Un sol normal)</option>
+	<option value="5">Apenas logra cumplir -pequeña estrella luminosa</option>
+	<option value="4">Torpe, escasa -estrella marrón, no ilumina </option>
+	<option value="3">Muy torpe, demasiado escasa -apenas estrella marrón</option>
+	<option value="2">Muy deficiente pero existente. (Un planeta)</option>
+	<option value="1">En la práctica inexistente. (Agujero negro)</option>
+	<option value="0">Carencia absoluta -Agujero negro supermasivo</option>
+      </select>
+      <select size="1" id="pleasureOfFunctionality6_2" name="pleasureOfFunctionality6_2">
+	<option value=""> - selecciona - </option>
+	<option value="blue">Facina</option>
+	<option value="dodgerblue">encanta</option>
+	<option value="green">Gusta</option>
+	<option value="olive">Agrada</option>
+	<option value="Chocolate">Indefinido</option>
+	<option value="Darkorange">Incomoda</option>
+	<option value="orangered">Irrita</option>
+	<option value="Darkred">duele.</option>
+	<option value="black">Me produce agresividad</option>
+	<option value="indigo">Cambios bruscos Depresión-Euforia</option>
+      </select>
+      <select size="1" id="frequencyOfFunctionality6_2" name="frequencyOfFunctionality6_2" value="normal">
+	<option value="normal">normal</option>
+	<option value="unusual">unusual</option>
+	<option value="rare">rare</option>
+      </select>
+      <a href="javascript:activateblock7_2();" style="text-decoration: none; ">+</a>
+    </spam>
+    <spam id="block7_2"  style="display:none;">
+      <select size="1" id="degreeOfFunctionality7_2" name="functionality7_2">
+	<option value=""> - Selecciona un nivel de funcionalidad - </option>
+	<option value="9">Increible, ¿nivel savant? -Estrella supergigante</option>
+	<option value="8">Superdesarrollada, ¿genialidad? -Estrella gigante</option>
+	<option value="7">Muy eficaz ¿altas prestaciones? -Estrella brillante</option>
+	<option value="6">Se desempeña bien, eficaz. (Un sol normal)</option>
+	<option value="5">Apenas logra cumplir -pequeña estrella luminosa</option>
+	<option value="4">Torpe, escasa -estrella marrón, no ilumina </option>
+	<option value="3">Muy torpe, demasiado escasa -apenas estrella marrón</option>
+	<option value="2">Muy deficiente pero existente. (Un planeta)</option>
+	<option value="1">En la práctica inexistente. (Agujero negro)</option>
+	<option value="0">Carencia absoluta -Agujero negro supermasivo</option>
+      </select>
+      <select size="1" id="pleasureOfFunctionality7_2" name="pleasureOfFunctionality7_2">
+	<option value=""> - selecciona - </option>
+	<option value="blue">Facina</option>
+	<option value="dodgerblue">encanta</option>
+	<option value="green">Gusta</option>
+	<option value="olive">Agrada</option>
+	<option value="Chocolate">Indefinido</option>
+	<option value="Darkorange">Incomoda</option>
+	<option value="orangered">Irrita</option>
+	<option value="Darkred">duele.</option>
+	<option value="black">Me produce agresividad</option>
+	<option value="indigo">Cambios bruscos Depresión-Euforia</option>
+      </select>
+      <select size="1" id="frequencyOfFunctionality7_2" name="frequencyOfFunctionality7_2" value="normal">
+	<option value="normal">normal</option>
+	<option value="unusual">unusual</option>
+	<option value="rare">rare</option>
+      </select>
+    </spam>
+    <button id="btn1">Set Text</button>  
+  </form>
+</div>
+
 <br />
+
 
 <div> <!-- All the starting "table" -->
   <div class="wrapper" id="w1">
